@@ -12,7 +12,7 @@ const {
 router.param("userId", getUserById);
 
 //GET USER
-router.get("/:userId", isSignin, isAuthenticated, getUser);
+router.get("/:userId", isSignin, getUser);
 
 //UPDATE USER
 router.put("/update/:userId", isSignin, isAuthenticated, updateUser);
